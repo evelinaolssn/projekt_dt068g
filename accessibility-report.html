@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tillgänglighet</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="top-contact">
+        <a href="tel:+46101234567" class="contact-link">
+            <i class="fa-solid fa-phone"></i> 010-123 45 67
+        </a>
+        <a href="mailto:support@fardtjanst.se" class="contact-link">
+            <i class="fa-solid fa-envelope"></i> support@fardtjanst.se
+        </a>
+    </div>
+    <header>
+        <div class="header-container">
+            <div class="logo-title">
+                <a href="index.html">
+                    <img src="images/logotyp_fardtjanst.svg" alt="Logotyp som föreställer en bil framifrån">
+                </a>
+                <p>Färdtjänst Online</p>
+            </div>
+
+            <button class="hamburger-menu" aria-label="Öppna meny" aria-expanded="false"
+                aria-controls="main-navigation">
+                ☰
+            </button>
+
+            <nav class="header-navigation" id="main-navigation">
+                <ul>
+                    <li><a href="booking.html"><i class="fa-solid fa-magnifying-glass-location" aria-hidden="true"></i>
+                            <span>Boka resa</span></a></li>
+                    <li><a href="my-bookings.html"><i class="fa-solid fa-user" aria-hidden="true"></i><span>Mina
+                                resor</span></a></li>
+                    <li><a href="accessibility-report.html" class="active"><i class="fa-solid fa-universal-access"
+                                aria-hidden="true"></i><span>Tillgänglighet</span></a></li>
+                    <li><a href="faq.html"><i class="fa-solid fa-circle-question" aria-hidden="true"></i><span>Frågor
+                                och
+                                svar</span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-image-container">
+            <img src="images/fardtjanst_header.jpg" alt="Person i rullstol med ledsagare i park" class="header-image">
+            <a href="booking.html" class="button-book">Boka resa</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="heading-section">
+            <div class="heading-container">
+                <h1>Tillgänglighetsredogörelse</h1>
+                <p>Senast uppdaterad: <strong>2026-02-07</strong></p>
+            </div>
+        </section>
+
+        <div class="accessibility-container">
+            <section class="accessibility-content">
+                <h2>Hur vi arbetar med tillgänglighet</h2>
+                <ul>
+                    <li><strong>Strukturerad HTML:</strong> Semantiska element används för bättre skärmläsarstöd.</li>
+                    <li><strong>Tangentbordsnavigering:</strong> Webbplatsen kan användas utan mus.</li>
+                    <li><strong>Alt-texter:</strong> Alla bilder och ikoner har beskrivande alt-attribut.</li>
+                    <li><strong>Responsiv design:</strong> Webbplatsen fungerar på mobil, surfplatta och dator.</li>
+                    <li><strong>Tydliga länkar:</strong> Beskrivande länktexter används för att tydligt informera om
+                        dess innehåll.</li>
+                    <li><strong>Formulär är tillgänglighetsanpassade:</strong> Användning av tydliga rubriker,
+                        fieldset och legend för att underlätta förståelse vid inmatning av fält.</li>
+                    <li><strong>Kontrast och läsbarhet:</strong> Färgval och textstorlek är anpassade för att ge god
+                        kontrast och tydlig
+                        läsbarhet enligt WCAG 2.1 nivå AA.</li>
+                </ul>
+            </section>
+
+            <section class="accessibility-content">
+                <h3>Kända brister i tillgänglighet</h3>
+                <p>Vi är medvetna om att vissa delar av webbplatsen kan förbättras:</p>
+                <ul>
+                    <li>Vissa interaktiva funktioner är beroende av JavaScript för att fungera fullt ut.</li>
+                    <li>Det finns i dagsläget inget valbart högkontrastläge eller möjlighet att förstora text direkt på
+                        sidan.</li>
+                    <li>Felmeddelanden i formulär är begränsade och kan utvecklas för att bli ännu tydligare och mer
+                        vägledande.</li>
+                </ul>
+            </section>
+
+            <section class="accessibility-content">
+                <h3>Rapportera tillgänglighetsproblem</h3>
+                <p>Vi arbetar kontinuerligt med att förbättra webbplatsens tillgänglighet. Om du upplever problem med
+                    webbplatsens tillgänglighet, kontakta oss:</p>
+                <p><strong>E-post:</strong> <a href="mailto:support@fardtjanst.se">support@fardtjanst.se</a></p>
+                <p><strong>Telefon:</strong> <a href="tel:+46101234567">010-123 45 67</a></p>
+                <p>Vi strävar efter att besvara alla förfrågningar inom kort.</p>
+            </section>
+
+            <section class="accessibility-content">
+                <h3>Tillsyn av tillgänglighet</h3>
+                <p>Om du inte är nöjd med hur vi hanterar din feedback kan du kontakta Myndigheten för digital
+                    förvaltning (DIGG).</p>
+                <p><strong>Webbplats:</strong> <a href="https://www.digg.se" target="_blank">www.digg.se</a></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <img src="images/logotyp_fardtjanst.svg" Alt="Logotyp som föreställer en bil framifrån">
+        <h3>Färdtjänst Online</h3>
+        <p>Telefon: +123 456 789</p>
+        <p>E-post: <a href="mailto:support@fardtjanst.se">support@fardtjanst.se</a></p>
+    </footer>
+</body>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Frågor och svar</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="top-contact">
+        <a href="tel:+46101234567" class="contact-link">
+            <i class="fa-solid fa-phone"></i> 010-123 45 67
+        </a>
+        <a href="mailto:support@fardtjanst.se" class="contact-link">
+            <i class="fa-solid fa-envelope"></i> support@fardtjanst.se
+        </a>
+    </div>
+    <header>
+        <div class="header-container">
+            <div class="logo-title">
+                <a href="index.html">
+                    <img src="images/logotyp_fardtjanst.svg" alt="Logotyp som föreställer en bil framifrån">
+                </a>
+                <p>Färdtjänst Online</p>
+            </div>
+
+            <button class="hamburger-menu" aria-label="Öppna meny" aria-expanded="false"
+                aria-controls="main-navigation">
+                ☰
+            </button>
+
+            <nav class="header-navigation" id="main-navigation">
+                <ul>
+                    <li><a href="booking.html"><i class="fa-solid fa-magnifying-glass-location" aria-hidden="true"></i>
+                            <span>Boka resa</span></a></li>
+                    <li><a href="my-bookings.html"><i class="fa-solid fa-user" aria-hidden="true"></i><span>Mina
+                                resor</span></a></li>
+                    <li><a href="accessibility-report.html"><i class="fa-solid fa-universal-access"
+                                aria-hidden="true"></i><span>Tillgänglighet</span></a></li>
+                    <li><a href="faq.html" class="active"><i class="fa-solid fa-circle-question"
+                                aria-hidden="true"></i><span>Frågor och svar</span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-image-container">
+            <img src="images/fardtjanst_header.jpg" alt="Person i rullstol med ledsagare i park" class="header-image">
+            <a href="booking.html" class="button-book">Boka resa</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="heading-section">
+            <div class="heading-container">
+                <h1>Frågor och svar</h1>
+                <p>Har du frågor om hur tjänsten fungerar? Här har vi samlat de vanligaste frågorna och svaren.</p>
+            </div>
+        </section>
+
+        <div class="main-startcontent">
+            <section class="faq-intro">
+                <h2>Vanliga frågor och svar</h2>
+
+                <h3>Hur bokar jag en färdtjänstresa?</h3>
+                <ul>
+                    <li>Klicka på <a href="booking.html">Boka resa</a></li>
+                    <li>Fyll i tid och destination</li>
+                    <li>Bekräfta din bokning</li>
+                </ul>
+
+                <h3>Hur avbokar jag en färdtjänstresa?</h3>
+                <ul>
+                    <li>Klicka på <a href="my-bookings.html">Mina resor</a></li>
+                    <li>Välj resa du vill avboka</li>
+                    <li>Klicka på avboka resa</li>
+                </ul>
+
+                <h3>Vad kostar en färdtjänstresa?</h3>
+                <div class="price-box">
+                    <p><strong>Vuxen (25 år och äldre):</strong><br> Du betalar 1,5 gånger priset för en vanlig
+                        bussbiljett.</p>
+                    <p><strong>Ungdom (20-25 år):</strong><br> Du betalar 75% av vuxenavgiften.</p>
+                    <p><strong>Barn (0-19 år):</strong><br> Du betalar hälften av vuxenavgiften.</p>
+                </div>
+
+                <h3>Vad är färdtjänst?</h3>
+                <p>Färdtjänst är en transporttjänst som hjälper personer med funktionsnedsättning att resa när de inte
+                    kan använda kollektivtrafiken.</p>
+
+                <h3>Vem kan få färdtjänst?</h3>
+                <p>Om du har en funktionsnedsättning som gör det svårt för dig att använda buss eller tåg, kan du ansöka
+                    om att få färdtjänst.</p>
+
+                <h3>Kan jag ta med en ledsagare på färdtjänstresan?</h3>
+                <p>Ja, om du behöver en ledsagare kan de följa med utan extra kostnad.</p>
+
+                <h3>Kan jag boka återkommande färdtjänstresor?</h3>
+                <p>Ja, du kan boka återkommande resor, till exempel för daglig pendling.</p>
+            </section>
+
+            <div class="side-startcontent">
+                <section id="contact-intro">
+                    <i id="contact-icon" class="fa-solid fa-phone" aria-hidden="true"></i>
+                    <h2>Kontakta Färdtjänst Online</h2>
+                    <p><strong>Telefon:</strong> +123 456 789</p>
+                    <p><strong>E-post:</strong> support@fardtjanst.se</p>
+                </section>
+
+                <section id="accessibility-intro">
+                    <i id="accessibility-icon" class="fa-solid fa-universal-access" aria-hidden="true"></i>
+                    <h2>Tillgänglighet</h2>
+                    <p>Denna webbplats är anpassad för alla användare.
+                        Vi följer WCAG 2.1-standarder för att säkerställa att alla kan navigera och använda tjänsten
+                        enkelt.</p>
+                    <a href="accessibility-report.html">Läs mer om tillgänglighet</a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="images/logotyp_fardtjanst.svg" alt="Logotyp som föreställer en bil framifrån">
+        <h3>Färdtjänst Online</h3>
+        <p>Telefon: +123 456 789</p>
+        <p>E-post: <a href="mailto:support@fardtjanst.se">support@fardtjanst.se</a></p>
+    </footer>
+</body>

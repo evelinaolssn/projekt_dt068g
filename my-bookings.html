@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mina resor</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="top-contact">
+        <a href="tel:+46101234567" class="contact-link">
+            <i class="fa-solid fa-phone"></i> 010-123 45 67
+        </a>
+        <a href="mailto:support@fardtjanst.se" class="contact-link">
+            <i class="fa-solid fa-envelope"></i> support@fardtjanst.se
+        </a>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-title">
+                <a href="index.html">
+                    <img src="images/logotyp_fardtjanst.svg" alt="Logotyp som föreställer en bil framifrån">
+                </a>
+                <p>Färdtjänst Online</p>
+            </div>
+
+            <button class="hamburger-menu" aria-label="Öppna meny" aria-expanded="false"
+                aria-controls="main-navigation">
+                ☰
+            </button>
+
+            <nav class="header-navigation" id="main-navigation">
+                <ul>
+                    <li><a href="booking.html"><i class="fa-solid fa-magnifying-glass-location" aria-hidden="true"></i>
+                            <span>Boka resa</span></a></li>
+                    <li><a href="my-bookings.html" class="active"><i class="fa-solid fa-user"
+                                aria-hidden="true"></i><span>Mina resor</span></a></li>
+                    <li><a href="accessibility-report.html"><i class="fa-solid fa-universal-access"
+                                aria-hidden="true"></i><span>Tillgänglighet</span></a></li>
+                    <li><a href="faq.html"><i class="fa-solid fa-circle-question" aria-hidden="true"></i><span>Frågor och
+                                svar</span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-image-container">
+            <img src="images/fardtjanst_header.jpg" alt="Person i rullstol med ledsagare i park" class="header-image">
+            <a href="booking.html" class="button-book">Boka resa</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="heading-section">
+            <div class="heading-container">
+                <h1>Mina resor</h1>
+                <p>Här kan du enkelt hantera och avboka dina färdtjänstresor.</p>
+            </div>
+        </section>
+
+        <section class="mytrips-container">
+            <div class="trips-heading">
+                <h2>Bokade resor</h2>
+            </div>
+            <article class="booked-trip">
+                <h3>Resa 1</h3>
+                <p><strong>Till:</strong> Storgatan 23, 852 30 Sundsvall</p>
+                <p><strong>Från:</strong> Centralstationen, Sundsvall</p>
+                <p><strong>Datum och tid:</strong> 2025-05-27 Klockan 13:00</p>
+                <div class="button-container">
+                    <button type="button" class="edit-trip">Ändra resa</button>
+                    <button type="button" class="cancel-trip">Avboka</button>
+                </div>
+            </article>
+
+            <article class="booked-trip">
+                <h3>Resa 2</h3>
+                <p><strong>Till:</strong> Storgatan 23, 852 30 Sundsvall</p>
+                <p><strong>Från:</strong> Tomtegränd 3, 853 69 Sundsvall</p>
+                <p><strong>Datum och tid:</strong> 2025-05-21 Klockan 15:00</p>
+                <div class="button-container">
+                    <button type="button" class="edit-trip">Ändra resa</button>
+                    <button type="button" class="cancel-trip">Avboka</button>
+                </div>
+            </article>
+        </section>
+
+        <section class="mytrips-container">
+            <div class="trips-heading">
+                <h2>Mina återkommande resor</h2>
+            </div>
+            <article class="booked-trip">
+                <h3>Läkare</h3>
+                <p><strong>Till:</strong> Läkarvägen 10, 852 32 Sundsvall</p>
+                <p><strong>Från:</strong> Storgatan 23, 852 30 Sundsvall</p>
+                <p><strong>Datum och tid:</strong> 2025-05-25 Klockan 15:00</p>
+                <div class="button-container">
+                    <button type="button" class="edit-trip">Ändra resa</button>
+                    <button type="button" class="cancel-trip">Avboka</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <img src="images/logotyp_fardtjanst.svg" alt="Logotyp som föreställer en bil framifrån">
+        <h3>Färdtjänst Online</h3>
+        <p>Telefon: +123 456 789</p>
+        <p>E-post: <a href="mailto:support@fardtjanst.se">support@fardtjanst.se</a></p>
+    </footer>
+</body>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Boka resa</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="top-contact">
+        <a href="tel:+46101234567" class="contact-link">
+            <i class="fa-solid fa-phone"></i> 010-123 45 67
+        </a>
+        <a href="mailto:support@fardtjanst.se" class="contact-link">
+            <i class="fa-solid fa-envelope"></i> support@fardtjanst.se
+        </a>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-title">
+                <a href="index.html">
+                    <img src="images/logotyp_fardtjanst.svg" alt="Logotyp som föreställer en bil framifrån">
+                </a>
+                <p>Färdtjänst Online</p>
+            </div>
+
+            <button class="hamburger-menu" aria-label="Öppna meny" aria-expanded="false"
+                aria-controls="main-navigation">
+                ☰
+            </button>
+
+            <nav class="header-navigation" id="main-navigation">
+                <ul>
+                    <li><a href="booking.html" class="active"><i class="fa-solid fa-magnifying-glass-location"
+                                aria-hidden="true"></i> <span>Boka resa</span></a></li>
+                    <li><a href="my-bookings.html"><i class="fa-solid fa-user" aria-hidden="true"></i><span>Mina
+                                resor</span></a></li>
+                    <li><a href="accessibility-report.html"><i class="fa-solid fa-universal-access"
+                                aria-hidden="true"></i><span>Tillgänglighet</span></a></li>
+                    <li><a href="faq.html"><i class="fa-solid fa-circle-question" aria-hidden="true"></i><span>Frågor och
+                                svar</span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-image-container">
+            <img src="images/fardtjanst_header.jpg" alt="Person i rullstol med ledsagare i park" class="header-image">
+        </div>
+    </header>
+
+    <main>
+        <section class="heading-section">
+            <div class="heading-container">
+                <h1>Boka resa</h1>
+                <p>Här kan du enkelt boka dina färdtjänstresor.</p>
+            </div>
+        </section>
+
+        <section class="booking-container">
+            <div class="trips-heading">
+                <h2>Välkommen Carin Carlsson</h2>
+            </div>
+
+            <div class="form-tabs">
+                <button type="button" class="one-trip">Boka resa</button>
+                <button type="button" class="scheduled-trip">Boka återkommande resa</button>
+            </div>
+
+            <form>
+                <fieldset>
+                    <legend>Resande</legend>
+                    <p>Carin Carlsson</p>
+                    <p>123456-7890</p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Destination</legend>
+                    <label for="from">Jag vill åka från:</label>
+                    <input type="text" id="from" name="from" required>
+                    <label for="to">Jag vill åka till:</label>
+                    <input type="text" id="to" name="to" required>
+                    <label for="date">Välj datum:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Välj tid:</label>
+                    <input type="time" id="time" name="time" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Särskilda behov</legend>
+                    <label><input type="checkbox" name="wheelchair">Jag behöver en rullstolsanpassad bil</label>
+                    <label><input type="checkbox" name="assistance">Jag behöver hjälp vid på- och avstigning</label>
+                    <label><input type="checkbox" name="passenger">Jag har en ledsagare/medpassagerare</label>
+                </fieldset>
+                <div class="button-container">
+                    <button type="button">Lägg till returresa</button>
+                    <button type="submit">Boka resa</button>
+                </div>
+            </form>
+
+            <section class="contact-booking">
+                <h3>Har du problem med att genomföra din bokning?</h3>
+                <p><strong>Telefon:</strong> <a href="tel:+123456789">+123 456 789</a></p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <img src="images/logotyp_fardtjanst.svg" Alt="Logotyp som föreställer en bil framifrån">
+        <h3>Färdtjänst Online</h3>
+        <p>Telefon: +123 456 789</p>
+        <p>E-post: <a href="mailto:support@fardtjanst.se"> support@fardtjanst.se</a></p>
+    </footer>
+</body>
