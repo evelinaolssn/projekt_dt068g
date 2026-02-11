@@ -20,7 +20,7 @@ body {
 }
 
 .contact-link {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -392,7 +392,7 @@ body {
     width: fit-content;
     margin: 24px auto 0 auto;
     background-color: #0A773F;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     padding: 12px 16px;
     border-radius: 6px;
@@ -413,7 +413,7 @@ body {
 /* Intro heading (booking page) */
 .trips-heading {
     background-color: #004AAD;
-    color: white;
+    color: #FFFFFF;
     padding: 12px 20px;
     text-align: left;
     border-radius: 8px;
@@ -456,7 +456,7 @@ body {
 
 .one-trip {
     background-color: #004AAD;
-    color: white;
+    color: #FFFFFF;
     border-radius: 0 10px 0 0;
 }
 
@@ -525,12 +525,12 @@ form {
 
 .booking-container form button[type="button"] {
     background-color: #1F3F78;
-    color: white;
+    color: #FFFFFF;
 }
 
 .booking-container form button[type="submit"] {
     background-color: #E2C000;
-    color: black;
+    color: #000000;
 }
 
 .booking-container form button:focus-visible {
