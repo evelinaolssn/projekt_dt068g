@@ -32,4 +32,55 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    // Select tab buttons and the section for recurring trips
+    const oneTripButton = document.getElementById("one-trip-button");
+    const scheduledTripButton = document.getElementById("scheduled-trip-button");
+    const scheduledTrip = document.getElementById("recurrent-trip");
+
+    // Select the booking form to change border color when tab changes
+    const form = document.querySelector("form");
+
+    // Only run if all required elements exist
+    if (oneTripButton && scheduledTripButton && scheduledTrip && form) {
+        oneTripButton.addEventListener("click", () => {
+            scheduledTrip.style.display = "none";
+
+            // Update which tab is visually active
+            oneTripButton.classList.add("active-tab");
+            scheduledTripButton.classList.remove("active-tab");
+
+            form.classList.remove("recurrent-active");
+        });
+
+        scheduledTripButton.addEventListener("click", () => {
+            // Show recurring trip options
+            scheduledTrip.style.display = "block";
+
+            scheduledTripButton.classList.add("active-tab");
+            oneTripButton.classList.remove("active-tab");
+
+            // Change form border color
+            form.classList.add("recurrent-active");
+        });
+    }
+
+    // Select return trip button and return element
+    const returnButton = document.getElementById("add-return");
+    const returnTrip = document.getElementById("return-trip");
+
+
+    if (returnButton && returnTrip) {
+        returnButton.addEventListener("click", () => {
+
+            // Change text content in button depending on 
+            if (returnTrip.style.display === "block") {
+                returnTrip.style.display = "none";
+                returnButton.textContent = "Lägg till returresa";
+            } else {
+                returnTrip.style.display = "block";
+                returnButton.textContent = "Ta bort returresa";
+            }
+        });
+    }
 });

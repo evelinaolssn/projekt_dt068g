@@ -42,7 +42,8 @@
                                 resor</span></a></li>
                     <li><a href="accessibility-report.html"><i class="fa-solid fa-universal-access"
                                 aria-hidden="true"></i><span>Tillgänglighet</span></a></li>
-                    <li><a href="faq.html"><i class="fa-solid fa-circle-question" aria-hidden="true"></i><span>Frågor och
+                    <li><a href="faq.html"><i class="fa-solid fa-circle-question" aria-hidden="true"></i><span>Frågor
+                                och
                                 svar</span></a></li>
                 </ul>
             </nav>
@@ -67,8 +68,8 @@
             </div>
 
             <div class="form-tabs">
-                <button type="button" class="one-trip">Boka resa</button>
-                <button type="button" class="scheduled-trip">Boka återkommande resa</button>
+                <button type="button" class="one-trip active-tab" id="one-trip-button">Boka resa</button>
+                <button type="button" class="scheduled-trip" id="scheduled-trip-button">Boka återkommande resa</button>
             </div>
 
             <form>
@@ -76,6 +77,22 @@
                     <legend>Resande</legend>
                     <p>Carin Carlsson</p>
                     <p>123456-7890</p>
+                </fieldset>
+
+                <fieldset id="recurrent-trip">
+                    <legend>Återkommande resa</legend>
+
+                    <label for="trip-name">Namnge resa</label>
+                    <input type="text" id="trip-name" name="trip-name">
+
+                    <label for="frequency">Hur ofta:</label>
+                    <select id="frequency" name="frequency">
+                        <option value="">Välj hur ofta</option>
+                        <option value="daily">Varje dag</option>
+                        <option value="weekly">Varje vecka</option>
+                        <option value="biweekly">Varannan vecka</option>
+                        <option value="monthly">Varje månad</option>
+                    </select>
                 </fieldset>
 
                 <fieldset>
@@ -91,16 +108,33 @@
                     <input type="time" id="time" name="time" required>
                 </fieldset>
 
+                <button type="button" id="add-return">Lägg till returresa</button>
+
+                <fieldset id="return-trip">
+                    <legend>Returresa</legend>
+
+                    <label for="return-from">Jag vill åka från:</label>
+                    <input type="text" id="return-from" name="return-from">
+
+                    <label for="return-to">Jag vill åka till:</label>
+                    <input type="text" id="return-to" name="return-to">
+
+                    <label for="return-date">Välj datum:</label>
+                    <input type="date" id="return-date" name="return-date">
+
+                    <label for="return-time">Välj tid:</label>
+                    <input type="time" id="return-time" name="return-time">
+                </fieldset>
+
                 <fieldset>
                     <legend>Särskilda behov</legend>
                     <label><input type="checkbox" name="wheelchair">Jag behöver en rullstolsanpassad bil</label>
                     <label><input type="checkbox" name="assistance">Jag behöver hjälp vid på- och avstigning</label>
                     <label><input type="checkbox" name="passenger">Jag har en ledsagare/medpassagerare</label>
                 </fieldset>
-                <div class="button-container">
-                    <button type="button">Lägg till returresa</button>
-                    <button type="submit">Boka resa</button>
-                </div>
+
+                <button type="submit">Boka resa</button>
+
             </form>
 
             <section class="contact-booking">

@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: "roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -436,12 +436,16 @@ body {
 }
 
 .form-tabs button {
-    flex: 1;
     min-height: 64px;
+    min-width: 200px;
     padding: 16px 18px;
     font-size: 1.2rem;
     border: none;
     cursor: pointer;
+}
+
+.active-tab {
+    flex: 1.5;
 }
 
 .one-trip,
@@ -457,13 +461,11 @@ body {
 .one-trip {
     background-color: #004AAD;
     color: #FFFFFF;
-    border-radius: 0 10px 0 0;
 }
 
 .scheduled-trip {
     background-color: #E2C000;
     color: black;
-    max-width: 300px;
 }
 
 /* Form (booking page) */
@@ -476,6 +478,10 @@ form {
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border: 3px solid #004AAD;
+}
+
+form.recurrent-active {
+    border: 3px solid #E2C000
 }
 
 .booking-container fieldset {
@@ -499,7 +505,8 @@ form {
 
 .booking-container input[type="text"],
 .booking-container input[type="date"],
-.booking-container input[type="time"] {
+.booking-container input[type="time"],
+.booking-container select {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
@@ -514,13 +521,14 @@ form {
 .booking-container form button {
     display: block;
     width: 100%;
+    max-width: 400px;
     padding: 12px;
     font-size: 1.2rem;
     font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    margin: 3rem;
 }
 
 .booking-container form button[type="button"] {
@@ -536,6 +544,24 @@ form {
 .booking-container form button:focus-visible {
     outline: 3px solid #000000;
     outline-offset: 3px;
+}
+
+.booking-container form button[type="button"]:hover,
+.booking-container form button[type="button"]:focus-visible {
+    background-color: #163060;
+}
+
+.booking-container form button[type="submit"]:hover,
+.booking-container form button[type="submit"]:focus-visible {
+    background-color: #c9ab04;
+}
+
+#recurrent-trip {
+    display: none;
+}
+
+#return-trip {
+    display: none;
 }
 
 /* Contact info (booking page) */
@@ -829,17 +855,18 @@ footer a {
         max-width: 400px;
         margin: 0 auto;
     }
-}
-
-/* Reduce padding on very small screens */
-@media (max-width: 800px) {
 
     .faq-intro {
         padding: 20px;
     }
+
+    .booking-container form button {
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
-/* Smaller hero button on phones */
+/* Smaller hero button and layout fix */
 @media (max-width: 480px) {
 
     .button-book {
